@@ -29,7 +29,7 @@ const CityPage = () => {
 
   return (
     <>
-      <main className="city">
+      <main className="city container">
         <CityMenu
           handleSetWeatherItem={handleSetWeatherItem}
           weatherData={weatherData}
