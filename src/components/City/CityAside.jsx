@@ -13,7 +13,7 @@ const CityAside = ({ weatherItem }) => {
           <ul className="aside__temp">
             <li className="temp__icon">
               <img
-                src={`../images/icon/weather/${weatherItem.Wx}.svg`}
+                src={`../Weather/images/icon/weather/${weatherItem.Wx}.svg`}
                 alt=""
               />
             </li>

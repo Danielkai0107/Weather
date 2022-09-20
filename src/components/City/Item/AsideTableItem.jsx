@@ -6,7 +6,7 @@ const AsideTableItem = ({ item }) => {
       <th>
         <p>{item.time}</p>
         <span>
-          <img src={`../images/icon/weather/${item.Wx}.svg`} alt="" />
+          <img src={`../Weather/images/icon/weather/${item.Wx}.svg`} alt="" />
         </span>
       </th>
       <td>
@@ -22,7 +22,7 @@ const AsideTableItem = ({ item }) => {
         <span>%</span>
       </td>
       <td>
-        <img src={`../images/icon/status/${item.CI}.svg`} alt="" />
+        <img src={`../Weather/images/icon/status/${item.CI}.svg`} alt="" />
       </td>
     </tr>
   );

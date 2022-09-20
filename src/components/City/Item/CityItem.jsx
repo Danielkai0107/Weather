@@ -15,12 +15,12 @@ const CityItem = ({ item, handleSetWeatherItem, setPhoneAsideOpen }) => {
           <span>{item.es_name}</span>
         </section>
         <section className="title__icon">
-          <img src={`../images/icon/weather/${item.Wx}.svg`} alt="" />
+          <img src={`../Weather/images/icon/weather/${item.Wx}.svg`} alt="" />
         </section>
       </article>
       <figure>
         <div className="mask"></div>
-        <img src={`../images/city/${item.bgc}.jpg`} alt="" />
+        <img src={`../Weather/images/city/${item.bgc}.jpg`} alt="" />
       </figure>
     </li>
   );
