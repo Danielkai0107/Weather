@@ -1,0 +1,161 @@
+.city__aside {
+  display: none;
+  //RWD-md
+  @include md {
+    @include size(380px, 100vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(#000, 0.4);
+  }
+  padding: 2rem;
+  .aside__container {
+    @include size(100%, 100%);
+    max-height: 850px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1s forwards;
+  }
+}
+
+.aside__title {
+  display: flex;
+  align-items: center;
+  h1 {
+    @include font(2rem, 2rem, 200, 3px);
+    color: #fff;
+    text-align: center;
+  }
+  h2 {
+    margin-left: 1rem;
+    @include font(1.5rem, 2rem, 300, 3px);
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.aside__temp {
+  @extend %flex-center;
+  gap: 2rem;
+  .temp {
+    &__icon {
+      @include size(6.5rem, 6.5rem);
+      @include img-w(100%, contain);
+    }
+    &__content {
+      height: 100%;
+      padding: 0.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      h1 {
+        @include font(1rem, 2rem, 200, 1px);
+        color: #fff;
+        white-space: nowrap;
+      }
+      p {
+        color: #fff;
+        @include font(3rem, 3.5rem, 400, 2px);
+        span {
+          color: #fff;
+          @include font(2rem, 3.5rem, 200, 1px);
+        }
+      }
+    }
+  }
+}
+
+.aside__table {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4vh;
+  h1 {
+    @include font(1rem, 2rem, 200, 2px);
+    text-align: center;
+    color: #fff;
+    span {
+      @include font(1rem, 2rem, 700, 1px);
+      color: #fff;
+    }
+  }
+  tbody {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    tr {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 2vh;
+      padding: 0.8rem 0.5rem;
+      border-radius: 2.5rem;
+      transition: all 0.8s;
+      &:nth-child(3) {
+        background: #5063f0; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to,
+          #f561eb,
+          #5063f0
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to bottom,
+          #f561eb,
+          #5063f0
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        box-shadow: 4px 4px 8px 0px rgba(#000, 0.5);
+      }
+    }
+    th {
+      width: 2.5rem;
+      height: 14vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      p {
+        @include font(0.5rem, 6vh, 300, 0px);
+        color: #fff;
+      }
+      span {
+        @include size(2.5rem, 5vh);
+        @include img-w(100%, contain);
+      }
+    }
+    td {
+      width: 2.5rem;
+      height: 6vh;
+      @extend %flex-center;
+      @include font(1rem, 6vh, 400, 2px);
+      color: #fff;
+      span {
+        @include font(0.8rem, 6vh, 300, 0px);
+        color: #fff;
+      }
+      @include img-w(55%, contain);
+    }
+    .icon {
+      td {
+        &:nth-child(2) {
+          background-image: url('../../../public/images/icon/outline/high-temp.svg');
+          @extend %bg-contain;
+        }
+        &:nth-child(3) {
+          background-image: url('../../../public/images/icon/outline/low-temp.svg');
+          @extend %bg-contain;
+        }
+        &:nth-child(4) {
+          background-image: url('../../../public/images/icon/outline/umbrella.svg');
+          @extend %bg-contain;
+        }
+        &:nth-child(5) {
+          background-image: url('../../../public/images/icon/outline/accessibility.svg');
+          @extend %bg-contain;
+        }
+      }
+    }
+  }
+}
