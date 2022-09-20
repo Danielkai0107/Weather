@@ -3,7 +3,7 @@
   @include size(100%, 100vh);
   z-index: 100;
   @extend %flex-center;
-  background-color: rgba(#000, 0.8);
+  background-color: rgba(#000, 0.5);
   @include blur(180%, 5px);
   //RWD-md
   @include md {
@@ -25,7 +25,7 @@
   display: flex;
   align-items: center;
   h1 {
-    @include font(2rem, 2rem, 200, 3px);
+    @include font(2rem, 2rem, 300, 3px);
     color: #fff;
     text-align: center;
   }
@@ -72,11 +72,11 @@
   flex-direction: column;
   gap: 4vh;
   h1 {
-    @include font(1rem, 2rem, 200, 2px);
+    @include font(1.2rem, 2rem, 300, 2px);
     text-align: center;
     color: #fff;
     span {
-      @include font(1rem, 2rem, 700, 1px);
+      @include font(1.2rem, 2rem, 700, 1px);
       color: #fff;
     }
   }
@@ -109,14 +109,13 @@
       }
     }
     th {
-      width: 2.5rem;
       height: 14vh;
       display: flex;
       justify-content: space-around;
       align-items: center;
       flex-direction: column;
       p {
-        @include font(0.5rem, 6vh, 300, 0px);
+        @include font(1rem, 6vh, 700, 1px);
         color: #fff;
       }
       span {
@@ -125,34 +124,47 @@
       }
     }
     td {
-      width: 2.5rem;
       height: 6vh;
       @extend %flex-center;
-      @include font(1rem, 6vh, 400, 2px);
+      @include font(1.2rem, 6vh, 400, 2px);
       color: #fff;
       span {
-        @include font(0.8rem, 6vh, 300, 0px);
+        @include font(1rem, 6vh, 300, 0px);
+        translate: 1px 2px;
         color: #fff;
       }
       @include img-w(55%, contain);
     }
     .icon {
       td {
+        @include size(6vh, 6vh);
+        @extend %flex-center;
+        span {
+          @include size(4vh, 4vh);
+        }
         &:nth-child(2) {
-          background-image: url('../../../public/images/icon/outline/high-temp.svg');
-          @extend %bg-contain;
+          span {
+            background-image: url('../../../public/images/icon/outline/high-temp.svg');
+            @extend %bg-contain;
+          }
         }
         &:nth-child(3) {
-          background-image: url('../../../public/images/icon/outline/low-temp.svg');
-          @extend %bg-contain;
+          span {
+            background-image: url('../../../public/images/icon/outline/low-temp.svg');
+            @extend %bg-contain;
+          }
         }
         &:nth-child(4) {
-          background-image: url('../../../public/images/icon/outline/umbrella.svg');
-          @extend %bg-contain;
+          span {
+            background-image: url('../../../public/images/icon/outline/umbrella.svg');
+            @extend %bg-contain;
+          }
         }
         &:nth-child(5) {
-          background-image: url('../../../public/images/icon/outline/accessibility.svg');
-          @extend %bg-contain;
+          span {
+            background-image: url('../../../public/images/icon/outline/accessibility.svg');
+            @extend %bg-contain;
+          }
         }
       }
     }

@@ -12,3 +12,16 @@ body {
   @extend %bg-cover;
   font-family: 'Noto Sans', sans-serif;
 }
+
+.container {
+  @include size(100%, 100vh);
+  @include absolute-lt(0%, 0%);
+  padding-top: 4rem;
+  //RWD-md
+  @include md {
+    padding-top: 0;
+    padding-left: 4rem;
+  }
+  overflow: hidden;
+  display: flex;
+}

@@ -32,10 +32,18 @@ const CityAside = ({ weatherItem }) => {
               <tbody>
                 <tr className="icon">
                   <th></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>
+                    <span></span>
+                  </td>
+                  <td>
+                    <span></span>
+                  </td>
+                  <td>
+                    <span></span>
+                  </td>
+                  <td>
+                    <span></span>
+                  </td>
                 </tr>
                 {weatherItem.time.map((item, index) => (
                   <AsideTableItem item={item} key={index} />

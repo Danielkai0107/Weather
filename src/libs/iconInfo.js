@@ -1,0 +1,22 @@
+import { nanoid } from 'nanoid';
+export const iconInfo = [
+  { id: nanoid(), name: '最高溫度', icon: '/outline/high-temp' },
+  { id: nanoid(), name: '最低溫度', icon: '/outline/low-temp' },
+  { id: nanoid(), name: '降雨機率', icon: '/outline/umbrella' },
+  { id: nanoid(), name: '舒適度', icon: '/outline/accessibility' },
+  { id: nanoid(), name: '舒適', icon: '/status/green' },
+  { id: nanoid(), name: '舒適至悶熱', icon: '/status/yellow' },
+  { id: nanoid(), name: '悶熱', icon: '/status/red' },
+  { id: nanoid(), name: '晴天', icon: '/weather/sun' },
+  { id: nanoid(), name: '陰天', icon: '/weather/cloud' },
+  { id: nanoid(), name: '多雲雷陣雨', icon: '/weather/lighting-rain' },
+  { id: nanoid(), name: '有雨', icon: '/weather/rain-heavy' },
+  { id: nanoid(), name: '雨天', icon: '/weather/rain-little' },
+  { id: nanoid(), name: '短暫雨', icon: '/weather/rain-normal' },
+  { id: nanoid(), name: '晴午後多雲', icon: '/weather/sun-cloud-2' },
+  { id: nanoid(), name: '晴時多雲', icon: '/weather/sun-cloud' },
+  { id: nanoid(), name: '晴時多雲有雨', icon: '/weather/sun-rain-1' },
+  { id: nanoid(), name: '陰時多雲陣雨', icon: '/weather/sun-rain-2' },
+  { id: nanoid(), name: '晴有霧', icon: '/weather/sun-wind' },
+  { id: nanoid(), name: '多雲有霧 ', icon: '/weather/wind' },
+];

@@ -110,14 +110,13 @@
       }
     }
     th {
-      width: 2.5rem;
       height: 14vh;
       display: flex;
       justify-content: space-around;
       align-items: center;
       flex-direction: column;
       p {
-        @include font(0.5rem, 6vh, 300, 0px);
+        @include font(0.5rem, 6vh, 500, 1px);
         color: #fff;
       }
       span {
@@ -126,7 +125,6 @@
       }
     }
     td {
-      width: 2.5rem;
       height: 6vh;
       @extend %flex-center;
       @include font(1rem, 6vh, 400, 2px);
@@ -139,21 +137,33 @@
     }
     .icon {
       td {
+        @include size(6vh, 6vh);
+        span {
+          @include size(4vh, 4vh);
+        }
         &:nth-child(2) {
-          background-image: url('../../../public/images/icon/outline/high-temp.svg');
-          @extend %bg-contain;
+          span {
+            background-image: url('../../../public/images/icon/outline/high-temp.svg');
+            @extend %bg-contain;
+          }
         }
         &:nth-child(3) {
-          background-image: url('../../../public/images/icon/outline/low-temp.svg');
-          @extend %bg-contain;
+          span {
+            background-image: url('../../../public/images/icon/outline/low-temp.svg');
+            @extend %bg-contain;
+          }
         }
         &:nth-child(4) {
-          background-image: url('../../../public/images/icon/outline/umbrella.svg');
-          @extend %bg-contain;
+          span {
+            background-image: url('../../../public/images/icon/outline/umbrella.svg');
+            @extend %bg-contain;
+          }
         }
         &:nth-child(5) {
-          background-image: url('../../../public/images/icon/outline/accessibility.svg');
-          @extend %bg-contain;
+          span {
+            background-image: url('../../../public/images/icon/outline/accessibility.svg');
+            @extend %bg-contain;
+          }
         }
       }
     }

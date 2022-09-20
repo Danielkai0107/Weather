@@ -1,0 +1,33 @@
+.info {
+  &__list {
+    @include size(100%, 100%);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow: auto;
+    @extend %scrollbar-none;
+    h1 {
+      color: #fff;
+      @include font(1.8rem, 2rem, 300, 4px);
+      margin-bottom: 3rem;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      opacity: 0.8;
+      figure {
+        @include size(2rem, 2rem);
+        @include img-w(100%, contain);
+      }
+      span {
+        color: #fff;
+        @include font(1.3rem, 3rem, 200, 5px);
+        //RWD-sm
+        @include md {
+        }
+      }
+    }
+  }
+}

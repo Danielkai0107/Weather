@@ -5,6 +5,7 @@ import './styles/globals.scss';
 import { AppProvider } from './func/context';
 import Navbar from './components/Navbar';
 import CityPage from './pages/CityPage';
+import InfoPage from './pages/InfoPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
         <Navbar />
         <Routes>
           <Route path="/" element={<CityPage />} />
+          <Route path="/info" element={<InfoPage />} />
         </Routes>
       </BrowserRouter>
     </AppProvider>
