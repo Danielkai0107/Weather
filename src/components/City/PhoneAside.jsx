@@ -20,7 +20,7 @@ const PhoneAside = ({ weatherItem, setPhoneAsideOpen, phoneAsideOpen }) => {
               <ul className="phone__temp">
                 <li className="temp__icon">
                   <img
-                    src={`../images/icon/weather/${weatherItem.Wx}.svg`}
+                    src={`../Weather/images/icon/weather/${weatherItem.Wx}.svg`}
                     alt=""
                   />
                 </li>
